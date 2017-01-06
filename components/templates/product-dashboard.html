@@ -1,0 +1,21 @@
+<div>
+    <div id="header">
+
+        <nav class="navbar navbar-default navbar-fixed-top">
+            <a ng-href="#/" class="pull-left" style="margin-left:10px;"><i aria-hidden="true" class="fa fa-home"></i></a>
+
+            {{::ctrl.dashboard.title}}
+        </nav>
+
+        <div class="clear"></div>
+    </div>
+
+    <div class="dashboard-widgets container-fluid" widget-container dashboard="ctrl.dashboard">
+        <div class="row">
+            <div class="col-xs-12">
+                <widget name="product" header="false"></widget>
+            </div>
+        </div>
+    </div>
+
+</div>
